@@ -22,7 +22,7 @@
         android:id="@+id/button"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="ALL ON"
+        android:text="ALL ON/OFF"
         tools:layout_editor_absoluteX="159dp"
         tools:layout_editor_absoluteY="198dp" />
 
