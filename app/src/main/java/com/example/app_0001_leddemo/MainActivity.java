@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Toast;
+import com.thisway.hardlibrary.*;
 
 public class MainActivity extends AppCompatActivity {
     private Button button = null;
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
     class MyButtonListenter implements View.OnClickListener {
         @Override
         public void onClick(View v){
+                HardControl hardControl = new HardControl();
+
                 ledOn = !ledOn;
                 if(ledOn) {
                     button.setText("ALL ON");
