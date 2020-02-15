@@ -7,6 +7,7 @@ android {
         applicationId "com.example.app_0001_leddemo"
         minSdkVersion 15
         targetSdkVersion 28
+        multiDexEnabled true
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -32,4 +33,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation project(path: ':classes')
+    implementation 'com.android.support:multidex:1.0.3'
 }
